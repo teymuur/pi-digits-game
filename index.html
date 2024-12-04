@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pi Digit Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1> Pi Digit Guessing Game</h1>
+        
+        <div class="config-section">
+            <div class="input-group">
+                <label for="digitCount">Number of Digits:</label>
+                <input type="number" id="digitCount" min="1" max="500" value="10">
+                <button onclick="startGame()">Start Game</button>
+            </div>
+            <input autocomplete="off" type="text" id="piGuessInput" placeholder="Enter your guess digits here">
+        </div>
+
+        <div id="resultDisplay"></div>
+        <a style="display: none" id="correct-digits" onclick="document.getElementById('resultDisplay').innerText=PI_DIGITS">See more digits of PI</a>
+        <div class="pi-info">Can you guess the digits of π (pi)?</div>
+    </div>
+    <div class="footer">
+        <p id="footertext">Copyright © 2024 Teymur Babayev</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

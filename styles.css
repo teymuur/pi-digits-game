@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f4f8;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.game-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+a{
+    color:#3498db;
+    padding: 20px;
+
+}
+a:hover{
+    color: #2980b9;
+    cursor:pointer;
+}
+h1 {
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.config-section {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+input[type="number"], #piGuessInput {
+    padding: 10px;
+    width: 90%;
+    margin: 0 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#resultDisplay {
+    margin-top: 20px;
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.correct-digit {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.incorrect-digit {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.pi-info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+#digitCount {
+    width: 100px;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 12px;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-device-width: 480px) {
+    .game-container {
+        padding: 20px 20px 60px 20px;
+        margin-bottom: 80vw;
+        min-width: 90%;
+        font-size: 30px;
+    }
+
+    input[type="number"], #piGuessInput {
+        font-size: 32px; /* Adjust font size for better readability */
+        padding: 15px; /* Increase padding for easier touch interaction */
+        width: calc(100% - 20px); /* Full width with padding */
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+    button{
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    #resultDisplay,.pi-info{
+        font-size: 32px;
+    }
+    .footer {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        font-size: 32px; /* Adjusted for better fit on smaller screens */
+    }
+}
