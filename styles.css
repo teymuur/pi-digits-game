@@ -75,6 +75,16 @@ button:hover {
     word-wrap: break-word;
     text-align: center;
 }
+#resultText {
+    
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 1.6;
+
+}
+#highscore{
+    color:#2980b9
+}
 
 .correct-digit {
     color: #2ecc71;
@@ -110,29 +120,8 @@ button:hover {
 @media only screen and (max-device-width: 480px) {
     .game-container {
         padding: 20px 20px 60px 20px;
-        margin-bottom: 80vw;
+        margin-bottom: 100vw;
         min-width: 90%;
-        font-size: 30px;
-    }
-
-    input[type="number"], #piGuessInput {
-        font-size: 32px; /* Adjust font size for better readability */
-        padding: 15px; /* Increase padding for easier touch interaction */
-        width: calc(100% - 20px); /* Full width with padding */
-        margin: 10px 0; /* Adjust margin for better spacing */
-    }
-    button{
-        font-size: 30px;
-        margin-left: 20px;
-    }
-
-    #resultDisplay,.pi-info{
-        font-size: 32px;
-    }
-    .footer {
-        width: 100%;
-        text-align: center;
-        padding: 15px;
-        font-size: 32px; /* Adjusted for better fit on smaller screens */
+ 
     }
 }
